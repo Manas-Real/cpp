@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int digit;
+    cout<<"hi"<<endl;
+    cin>>digit;
+    int count = 0;
+    while(true){
+        digit = digit /10;
+        ++count;
+        if(digit == 0){
+            break;
+        }
+    }
+    cout<<"there are this many digits in your number> "<<count;
+    return 0;
+}
+
