@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+void myManas(int abc){
+    cout<<"Enter a number";
+    cin>>abc;
+    if(abc % 2 == 0)
+        cout<<"Even";
+    else
+        cout<<"odd";
+  }
+int main() {
+    myManas(0);
+    return 0;
+}
