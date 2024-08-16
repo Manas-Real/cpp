@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int numb;
+    cout<<"hi"<<endl;
+    cin>>numb;
+    int sum = 0;
+    while(numb > 0){
+        int last_dig;
+        last_dig = numb % 10;
+        sum+=last_dig;
+        numb = numb / 10;
+    }
+    cout<<"the numbers digit add up to "<< sum;
+}
+
