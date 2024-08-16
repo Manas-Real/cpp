@@ -1,0 +1,60 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    string input;
+    cout<<"What would you like to do in the calculator?";
+    cin>>input;
+    float x ,y;
+    cout<<"enter first number";
+    cin>>x;
+    cout<<"enter second number";
+    cin>>y;
+    float ans = 0;
+    if(input == "Multiplication"){
+        float ans = x * y;
+        cout<<ans;
+    }
+    else if(input == "Division"){
+        float ans = x / y;
+        cout<<ans;
+    }
+    else if(input == "Addition"){
+        float ans = x + y;
+        cout<<ans;
+    }
+    else if(input == "Subtraction"){
+        float ans = x - y;
+        cout<<ans;
+    }
+    else if(input == "Sin"){
+        float ans = sin(x);
+        cout<<ans;
+    }
+    else if(input == "Cos"){
+        float ans = cos(x);
+        cout<<ans;
+    }
+    else if(input == "Tan"){
+        float ans = tan(x);
+        cout<<ans;
+    }
+    else if(input == "Exp"){
+        float ans = exp(x);
+        cout<<ans;
+    }
+     else if(input == "Minimum"){
+        float ans = min(x,y);
+        cout<<ans;
+    }
+    else if(input == "Maximum"){
+        float ans = max(x,y);
+        cout<<ans;
+    }
+    else{
+        cout<<"invalid request";
+    }
+    return 0;
+}
+
